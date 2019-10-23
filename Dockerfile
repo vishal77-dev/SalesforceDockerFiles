@@ -10,7 +10,5 @@ RUN apk add apache-ant --update-cache \
 RUN apk add xmlstarlet bash --update --repository http://dl-4.alpinelinux.org/alpine/edge/testing \
 	&& rm -rf /var/cache/apk/*
 
-ENTRYPOINT ["xmlstarlet"]
-
 ENV ANT_HOME /usr/share/java/apache-ant
 ENV PATH $PATH:$ANT_HOME/bin
