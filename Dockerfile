@@ -12,7 +12,7 @@ RUN apk add apache-ant --update-cache \
 RUN apk add xmlstarlet bash --update --repository http://dl-4.alpinelinux.org/alpine/edge/testing \
 	&& rm -rf /var/cache/apk/*
 #added vlocity code
-RUN curl --silent --location https://deb.nodesource.com/setup | bash - 
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN yum install nodejs -y
 RUN npm install --global pkg
 
