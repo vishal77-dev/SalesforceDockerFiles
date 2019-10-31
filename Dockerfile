@@ -5,6 +5,7 @@ FROM node:10
 MAINTAINER Vishal <vinu.vizal@gmail.com>
 RUN dpkg --add-architecture i386
 
+RUN apt-get update
 RUN apt-get install -y jq
 RUN apt-get install -y libc6:i386 libstdc++6:i386
 
@@ -18,7 +19,6 @@ RUN pkg-fetch -n node10 -p macos -a x64
 
 RUN npm install --global pkg
 
-RUN apk update
 RUN apk add bash
 RUN apk add curl
 RUN apk add git
