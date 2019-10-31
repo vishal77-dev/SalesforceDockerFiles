@@ -32,17 +32,4 @@ RUN pkg-fetch -n node10 -p linux -a x64
 RUN pkg-fetch -n node10 -p macos -a x64
 
 RUN npm install --global pkg
-
-
-#added vlocity code
-# declare /vlocity_build as working directory of image
-WORKDIR /vlocity_build
-
-COPY ./package*.json /vlocity_build/
-
-RUN npm install
-
-# Important to do this final part last because of how docker builds image
-# copy all remaining files/folders in project directory to the container
-COPY . /vlocity_build
-# till here
+RUN npm install --global vlocity
