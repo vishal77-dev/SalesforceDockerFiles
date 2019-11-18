@@ -15,5 +15,4 @@ RUN pkg-fetch -n node10 -p linux -a x64
 RUN pkg-fetch -n node10 -p macos -a x64
 
 RUN npm install --global pkg
-
-RUN npm install
+RUN npm install --global vlocity
