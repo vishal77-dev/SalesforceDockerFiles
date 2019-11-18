@@ -1,3 +1,4 @@
+#dockerfile for vlocity deployment
 FROM node:10
 MAINTAINER Vishal <vinu.vizal@gmail.com>
 RUN dpkg --add-architecture i386
