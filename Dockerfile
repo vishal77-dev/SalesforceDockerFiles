@@ -1,5 +1,5 @@
 #DockerImage with bash and xml, vlocity script for salesforce
-FROM alpine
+FROM frekele/java:jdk8
 MAINTAINER Vishal <vinu.vizal@gmail.com>
 
 RUN apk add bash
