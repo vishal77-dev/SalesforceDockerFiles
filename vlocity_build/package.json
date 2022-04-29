@@ -2,7 +2,7 @@
     "author": "arutland@vlocity.com",
     "bin": "lib/vlocitybuild.js",
     "dependencies": {
-        "async": "2.6.1",
+        "async": "2.6.4",
         "diff2html": "2.5.0",
         "file-type": "10.9.0",
         "fs-extra": "8.0.1",
